@@ -403,6 +403,11 @@
                 <keyword>trap</keyword>
                 <keyword>trapv</keyword>
                 <keyword>unlk</keyword>
+
+				<keyword>break</keyword>
+				<keyword>org</keyword>
+				<keyword>end</keyword>
+
 	</keyword-list>
 
 	<keyword-list _name = "Preprocessor Definitions" style = "Preprocessor" case-sensitive="FALSE">
