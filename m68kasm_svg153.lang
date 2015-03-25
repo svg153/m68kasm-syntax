@@ -210,6 +210,9 @@
                 <keyword>subx</keyword>
 		<keyword>tas</keyword>
 		<keyword>tst</keyword>
+
+		<keyword>ds</keyword>
+
 	</keyword-list>
 	
 	
@@ -319,6 +322,9 @@
                 <keyword>subx</keyword>
 		<keyword>swap</keyword>
 		<keyword>tst</keyword>
+
+		<keyword>ds</keyword>
+
 	</keyword-list>
 	
 
@@ -370,6 +376,9 @@
                 <keyword>subq</keyword>
                 <keyword>subx</keyword>
 		<keyword>tst</keyword>
+
+		<keyword>ds</keyword>
+
 	</keyword-list>
 	
 
