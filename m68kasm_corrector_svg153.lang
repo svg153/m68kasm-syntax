@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+ This file is part of GtkSourceView-3.0
+ 
+ Syntax for corrector of Proyect Motorola 68000 ETSIINF UPM
+	
+ Author: Sergio Valverde (@svg153) 
+
+ version: 0.1
+
+-->
+
+<!DOCTYPE language SYSTEM "language.dtd">
+<language _name="m68kasm corrector svg153" version="1.0" _section="Sources">
+	
+	<!--
+	<metadata>
+		<property name="mimetypes">text/x-s</property>
+	    	<property name="globs">*.s</property>
+    		<property name="line-comment-start">*</property>
+  	</metadata>
+  	
+
+	<escape-char>\</escape-char>
+
+	<line-comment _name = "Line Comment" style= "Comment">	
+		<start-regex>\*</start-regex>
+	</line-comment>
+	
+	<pattern-item _name = "Label" style = "Preprocessor">
+		<regex>^[A-Za-z_][A-Za-z_0-9]*\:</regex>
+	</pattern-item>
+
+	-->
+	
+	
+	
+	<!-- pr32es_int -->
+	<pattern-item _name = "LoQueSalio" style = "Constant">
+		<regex>El resultado obtenido es:</regex>
+	</pattern-item>
+
+	<pattern-item _name = "LoQueSalio" style = "special-case">
+		<regex>El valor de este registro no es correcto. El que genera la prueba es</regex>
+	</pattern-item>
+
+	
+	
+	<!-- pr32es_int -->
+	<pattern-item _name = "DeberiaSer" style = "String">
+		<regex>El contenido correcto deberia ser:</regex>	
+	</pattern-item>
+
+	<pattern-item _name = "DeberiaSer" style = "String">
+		<regex>y el que debe generar es</regex>		
+	</pattern-item>
+
+	<string _name = "String" style = "String" end-at-line-end = "TRUE">
+		<start-regex>&apos;</start-regex>
+		<end-regex>&apos;</end-regex>
+	</string>
+	
+
+	<!-- pr32es_int -->
+	<pattern-item _name = "Prueba" style = "Comment">
+		<regex>pr[0-9]{2}es_int</regex>
+	</pattern-item>
+
+	<!-- DIRECCION 00008000: -->
+	
+	
+	<!-- Hexadecimal and ImOperand -->
+	<!--
+	<pattern-item _name = "ImFusion" style = "Decimal">
+		 <regex>\B#?\$[A-Za-z0-9]{8}\b</regex>
+	</pattern-item>
+
+	<pattern-item _name = "Direction" style = "Comment">
+		<regex>direccion [0-9a-fA-F]{8}:</regex>
+	</pattern-item>
+
+	-->
+
+
+
+	
+<!--
+	<pattern-item _name = "Hex Number" style = "number">
+		<regex>\b0[xX][0-9a-fA-F]+([Uu]([Ll]|LL|ll)?|([Ll]|LL|ll)[Uu]?)?\b</regex>
+	</pattern-item>
+-->
+
+	<!-- 1, 2, 3 ... |  -->
+<!--
+	<pattern-item _name = "Decimal" style = "Decimal">
+		<regex>\b([1-9][0-9]*|0)([Uu]([Ll]|LL|ll)?|([Ll]|LL|ll)[Uu]?)?\b</regex>
+	</pattern-item>
+-->
+
+<!--
+	<pattern-item _name = "Hexadecimal" style = "number">
+		<regex>\B#\$[0-9a-fA-F]{8}\b</regex>
+	</pattern-item>
+-->
+
+
+	<keyword-list _name = "Direction" style = "Comment" case-sensitive="FALSE"
+		match-empty-string-at-beginning = "FALSE"
+		match-empty-string-at-end = "TRUE">
+		<keyword>direccion [0-9a-fA-F]{8}:</keyword>
+	</keyword-list>
+
+	<keyword-list _name = "Registers" style = "Data Type" case-sensitive="FALSE">
+		<keyword>registro d0:</keyword>
+	</keyword-list>
+
+	<keyword-list _name = "Excepcion" style = "Error" case-sensitive="FALSE">
+		<keyword>Se ha producido la excepcion:</keyword>
+	</keyword-list>
+
+</language>
+
+
+
+<!--
+
+
+-->
+
+
+
