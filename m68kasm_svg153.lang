@@ -417,6 +417,10 @@
 				<keyword>org</keyword>
 				<keyword>end</keyword>
 
+				
+				<keyword>beq</keyword>
+				<keyword>bne</keyword>
+
 	</keyword-list>
 
 	<keyword-list _name = "Preprocessor Definitions" style = "Preprocessor" case-sensitive="FALSE">
@@ -427,7 +431,7 @@
 		<keyword>include</keyword>
 		<keyword>equ</keyword>
 		<keyword>set</keyword>
-		<keyword>even</keyword>
+		<keyword>even</keyword>			
 	</keyword-list>	
 
 </language>
